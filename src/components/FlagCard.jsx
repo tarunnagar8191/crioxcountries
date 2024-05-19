@@ -10,7 +10,7 @@ const FlagCard = () => {
   const fetchFlags = async () => {
     let url = "https://restcountries.com/v3.1/all";
     try {
-      let response = await axios(url);
+      let response = await axios.get(url);
       if (response.status === 200) {
         setFlag(response.data);
       }
