@@ -25,8 +25,6 @@ const FlagCard = () => {
     fetchFlags();
   }, []);
 
-  console.log(flag);
-
   if (flag.length === 0) {
     return (
       <div>
