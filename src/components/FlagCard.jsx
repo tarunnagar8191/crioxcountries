@@ -27,14 +27,14 @@ const FlagCard = () => {
 
   console.log(flag);
 
-//   if (flag.length === 0) {
-//     return (
-//       <div>
-//         <img src={walk} alt="Loader.jpg" width={100} />
-//         <p>Loading...</p>
-//       </div>
-//     );
-//   }
+  if (flag.length === 0) {
+    return (
+      <div>
+        <img src={walk} alt="Loader.jpg" width={100} />
+        <p>Loading...</p>
+      </div>
+    );
+  }
   return (
     <div className="container">
       {flag.map((country) => {
